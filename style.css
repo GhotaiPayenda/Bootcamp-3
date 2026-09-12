@@ -1,0 +1,981 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* color: #043333; */
+}
+
+header {
+    background-color: white;
+    color: #043333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 89%;
+    position: fixed;
+    border-radius: 1rem;
+    left: 2rem;
+    top: 40px;
+}
+
+.navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-end;
+}
+
+.navbar-toggle span:nth-child(1) {
+    width: 20px;
+    height: 3px;
+    background-color: #043333;
+    border-radius: 20px;
+}
+
+.navbar-toggle span:nth-child(2) {
+    width: 15px;
+    height: 3px;
+    background-color: #043333;
+    border-radius: 20px;
+}
+
+.navbar-toggle span:nth-child(3) {
+    width: 20px;
+    height: 3px;
+    background-color: #043333;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* overflow: hidden; */
+
+    color: white;
+    padding: 120px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    /* z-index: 9999; */
+}
+
+.hero p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    padding-bottom: 30px;
+}
+
+.icon {
+    font-size: 12rem;
+}
+
+.hero-btn {
+    background-color: #043333;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    padding: 20px 30px;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.sec2 {
+    margin: 2ch;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #043333;
+}
+
+.sec2-header {
+    text-align: center;
+
+}
+
+.sec2-cards {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sec2-cards .card {
+    width: 400px;
+    height: 450px;
+    border-radius: 1rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec2-cards .card-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.sec2-cards h4 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.card button {
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 100px;
+    border: none;
+}
+
+.sec2-cards .card1 {
+    background-color: #043333;
+    color: white;
+}
+
+.sec2-cards .card2 {
+    background-color: #e7f0ee;
+}
+
+.sec2-cards .card3 {
+    background: url(/3rd-bootcamp-videos-images/images/hero-green-grass.webp);
+    background-size: cover;
+}
+
+
+/* section 3 */
+.sec3 {
+    margin-top: 80px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    background-color: #043333;
+    color: white;
+}
+
+.sec3-header {
+    text-align: center;
+
+}
+
+.sec3-content ol {
+    border-left: 1px solid #224b4b;
+    list-style-position: inside;
+}
+
+.sec3-content ol li {
+    padding: 30px 10px;
+}
+
+.sec3-content span {
+    background-color: white;
+    color: black;
+    border-radius: 200pxs;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+
+}
+
+.sec3-content .profiles {
+    display: flex;
+}
+
+.sec3-content .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #a9ffca;
+    border: 1px solid white;
+}
+
+.sec3-content .img5 {
+    background-color: #a9ffca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section 4 */
+.sec4 {
+    margin-top: 80px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.1rem;
+    color: #043333;
+}
+
+.sec4-header {
+    text-align: center;
+
+}
+
+.sec4-header h2 {
+    margin: 20px 0;
+}
+
+.sec4-header button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 200px;
+    background-color: #043333;
+    color: white;
+}
+
+.sec4-content {
+    display: grid;
+    gap: 20px;
+}
+
+.sec4-content .card {
+    padding: 20px;
+    background-color: #e7f0ee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 1rem;
+}
+
+.sec4-content .card .card-img {
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+.sec4-content .card1 .card-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-wind-turbine.webp");
+}
+
+.sec4-content .card2 .card-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/services-wind-aesthetic.webp");
+}
+
+.sec4-content .card3 .card-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/services-solar-panels.webp");
+}
+
+.sec4-content .card4 .card-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/services-green-sky.webp");
+}
+
+/* section 5 */
+.sec5 {
+    font-size: 1.1rem;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #043333;
+}
+
+.sec5-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sec5-header button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 200px;
+    background-color: #043333;
+    color: white;
+}
+
+.sec5-header p {
+    font-size: 1.3rem;
+}
+
+.sec5-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec5 .content-text {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    padding-bottom: 30px;
+}
+
+.sec5 .content-text span {
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+
+.sec5 .content-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec5-img:nth-child(1) {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-women-wind-fan.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem;
+}
+
+.sec5-img:nth-child(2) {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-water-droplet.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem;
+}
+
+/* section 6 */
+.sec6 {
+    background-color: #043333;
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+.sec6-header h2 {
+    font-size: 2rem;
+}
+
+.subcard {
+    background-color: #224b4b;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.sec6-first-card .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/designing-solutions-farm-image.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    margin-top: 30px;
+}
+
+.sec6-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sec6-cards .card {
+    border: dashed 1px white;
+    padding: 20px;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.sec6-cards .card p {
+    margin-top: 20px;
+}
+
+
+
+/* section 7 */
+.sec7 {
+    padding: 60px 20px;
+
+}
+
+.sec7-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.sec7-header p {
+    font-size: 1.4rem;
+}
+
+.sec7-header button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 200px;
+    background-color: #043333;
+    color: white;
+}
+
+.sec7-main {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sec7-main .card {
+    width: 100%;
+    height: 270px;
+    background-color: #e7f0ee;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sec7-main .card2 {
+    background-color: #a9ffca;
+}
+
+.sec7-main .card span {
+    font-size: 4rem;
+}
+
+
+.sec7-main .img1 {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-wind-turbine.webp");
+    background-size: cover;
+}
+
+.sec7-main .img2 {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-boats-water.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sec7-main .img3 {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-watering-plants.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.sec7-main .img4 {
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-mountain-road.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+
+
+/* section 8 */
+.sec8 {
+    padding: 60px 20px;
+
+}
+
+.sec8-header {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.sec8-header h2 {
+    margin-top: 25px;
+}
+
+.sec8-cards .card {
+    background-color: #e7f0ee;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.sec8 .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec8 .card-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sec8 .card-profile .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/testimonial-esther-howard.png");
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+
+}
+
+
+/* .section 9 */
+
+.sec9 {
+    padding: 40px 20px;
+    background-color: #043333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.sec9-content {
+    text-align: center;
+}
+
+.sec9-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sec9-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sec9-btns button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 200px;
+    background-color: white;
+    color: #043333;
+    font-weight: bold;
+}
+
+.sec9-btns button:nth-child(1) {
+    background-color: #a9ffca;
+}
+
+.sec9 .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec9 .img1 {
+    background-image: url("/3rd-bootcamp-videos-images/images/services-solar-panels.webp");
+    position: relative;
+    right: -270px;
+}
+
+.sec9 .img2 {
+    background-image: url("/3rd-bootcamp-videos-images/images/gallery-tree.jpg");
+    position: relative;
+    left: 30px;
+}
+
+/* section 10 */
+.sec10 {
+    padding: 80px 20px;
+    font-size: 1.2rem;
+    color: #043333;
+}
+
+.sec10-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sec10-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.sec10-cards .card {
+    border-top: 1px dashed #043333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec10-cards .card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sec10-cards .card .profile {
+    display: flex;
+    gap: 20px;
+}
+
+.sec10-cards .card .profile-img {
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.sec10-cards .card1 .profile-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/author-elena-vargas.jpg");
+}
+
+.sec10-cards .card2 .profile-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/author-marcus-chen.png");
+}
+
+.sec10-cards .card3 .profile-img {
+    background-image: url("/3rd-bootcamp-videos-images/images/author-emma-thompson.jpg");
+}
+
+.sec10-cards .card .img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    border-radius: 1rem;
+}
+
+.sec10-cards .card1 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/news-circular-revolution.png");
+}
+
+.sec10-cards .card2 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/news-eco-friendly-choices.png");
+}
+
+.sec10-cards .card3 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/news-sustainable-brands.jpg");
+}
+
+/* section 11 */
+.sec11 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #043333;
+    font-size: 1.2rem;
+}
+
+.sec11 input {
+    padding: 20px 20px;
+    border-radius: 200px;
+    background-color: #f1f1f1;
+    border: none;
+    margin: 20px 0;
+}
+
+.sec11 h4 {
+    color: #799393;
+}
+
+.sec11 ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.sec11 a {
+    text-decoration: none;
+    color: #043333;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: #043333;
+    color: white;
+    border-radius: 1rem;
+    margin: 10px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 200px;
+    background-color: #224b4b;
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+    * {
+        font-size: 20px;
+    }
+
+    .sec2-cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec3 {
+        align-items: flex-start;
+    }
+
+    .sec4-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1.6fr 1fr 1fr;
+    }
+
+    .sec4-content .card1 {
+        grid-column: 1 / 3;
+    }
+
+    .sec4-content .card1 .card-img {
+        height: 600px;
+    }
+
+    .sec5-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .sec5 .content-text {
+        max-width: 300px;
+    }
+
+    .sec5 .content-images {
+        flex-direction: row;
+    }
+
+    .sec6-cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .sec6-cards .card {
+        width: 400px;
+    }
+
+    .sec7 {
+        padding: 40px;
+    }
+
+    .sec7-main {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(4, 300px);
+    }
+
+    .sec7-main .img1 {
+        grid-column: 6/10;
+    }
+
+    .sec7-main .card1 {
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+
+    .sec7-main .img2 {
+        grid-column: 4/7;
+    }
+
+    .sec7-main .card2 {
+        grid-column: 7/10;
+    }
+
+    .sec7-main .img3 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+
+    .sec7-main .card3 {
+        grid-column: 5/10;
+    }
+
+    .sec7-main .img4 {
+        grid-column: 1/5;
+        height: 300px;
+    }
+
+    .sec9 {
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+    }
+
+    .sec9-content {
+        max-width: 65%;
+        justify-self: center;
+
+    }
+
+    .sec9-btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sec9 .image {
+        background-size: cover;
+        background-position: center;
+        border-radius: 1rem;
+    }
+
+    .sec9 .img1 {
+        position: absolute;
+        top: 100px;
+        left: 420px;
+    }
+
+    .sec9 .img2 {
+        position: absolute;
+        bottom: 60px;
+        left: 420px;
+    }
+
+    .sec9 .img3 {
+        background-image: url("/3rd-bootcamp-videos-images/images/gallery-garden1.webp");
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 200px;
+        left: 80px;
+    }
+
+    .sec9 .img4 {
+        background-image: url("/3rd-bootcamp-videos-images/images/gallery-wind-fans.jpg");
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .sec9 .img5 {
+        background-image: url("/3rd-bootcamp-videos-images/images/gallery-dam-bridge.webp");
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        left: 50px;
+        bottom: 40px;
+    }
+
+    .sec9 .img6 {
+        background-image: url("/3rd-bootcamp-videos-images/images/gallery-garden.webp");
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: 120px;
+        bottom: 120px;
+    }
+
+    .sec10-cards {
+        /* flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; */
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sec10-cards .card {
+        width: 400px;
+    }
+
+    .sec11-main {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+    }
+
+    .sec2 {
+        align-items: center;
+    }
+
+    .sec2-header {
+        max-width: 650px;
+    }
+
+    .sec2-cards .card {
+        width: 600px;
+    }
+
+    .sec3-header {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec4-content .card .card-img {
+        height: 450px;
+        background-position: center;
+    }
+
+    .sec4-content .card1 .card-img {
+        height: 950px;
+    }
+
+    .sec6-cards {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec6-cards .card {
+        width: 600px;
+    }
+
+    .sec10-cards {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .sec10-cards .card {
+        width: 600px;
+    }
+
+    .sec10-cards .card .img {
+        height: 600px;
+    }
+}
