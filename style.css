@@ -37,10 +37,10 @@ header {
     top: 40px;
     z-index: 9999;
     overflow: hidden;
+    transition: min-height 10s ease-in-out;
 }
 
 header.active {
-    transition: 10s ease-in-out;
     min-height: 500px;
 }
 
@@ -136,15 +136,14 @@ h1 {
 
 .star {
     animation: 10s star infinite;
-    transition: 10s ease all;
 }
 
-@keyframes satr {
-    0% {
+@keyframes star {
+    from {
         transform: rotate(0);
     }
 
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }
