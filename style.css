@@ -6,6 +6,10 @@
     /* color: #043333; */
 }
 
+body {
+    width: 100vw;
+}
+
 .green-btn {
     background-color: #043333;
     color: #f1f1f1 !important;
@@ -162,6 +166,7 @@ h1 {
     justify-content: space-evenly;
     margin-bottom: 60px;
     margin-top: 40px;
+    overflow: hidden;
 }
 
 .sec2 {
@@ -567,10 +572,17 @@ h1 {
     margin-top: 25px;
 }
 
+.sec8-cards {
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+}
+
 .sec8-cards .card {
     background-color: #e7f0ee;
     padding: 10px;
     border-radius: 1rem;
+    min-width: 400px;
 }
 
 .sec8 .card-content {
@@ -594,6 +606,22 @@ h1 {
     height: 80px;
     border-radius: 100px;
 
+}
+
+.sec8 .card-profile .card1 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/testimonial-esther-howard.png");
+}
+
+.sec8 .card-profile .card2 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/author-marcus-chen.png");
+}
+
+.sec8 .card-profile .card3 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/testimonial-jenkins-torret.png");
+}
+
+.sec8 .card-profile .card4 .img {
+    background-image: url("/3rd-bootcamp-videos-images/images/testimonial-marcus-thorne.jpg");
 }
 
 
