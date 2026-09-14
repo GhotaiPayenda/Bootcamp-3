@@ -585,7 +585,7 @@ h1 {
 }
 
 .sec7-main .img4 {
-    background-image: url("/3rd-bootcamp-videos-images/images/statistics-mountain-road.jpg");
+    background-image: url("/3rd-bootcamp-videos-images/images/statistics-mountain-road.webp");
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -717,7 +717,7 @@ h1 {
 }
 
 .sec9 .img2 {
-    background-image: url("/3rd-bootcamp-videos-images/images/gallery-tree.jpg");
+    background-image: url("/3rd-bootcamp-videos-images/images/gallery-tree.webp");
     position: relative;
     left: 30px;
 }
@@ -788,11 +788,11 @@ h1 {
 }
 
 .sec10-cards .card1 .img {
-    background-image: url("/3rd-bootcamp-videos-images/images/news-circular-revolution.png");
+    background-image: url("/3rd-bootcamp-videos-images/images/news-circular-revolution.jpg");
 }
 
 .sec10-cards .card2 .img {
-    background-image: url("/3rd-bootcamp-videos-images/images/news-eco-friendly-choices.png");
+    background-image: url("/3rd-bootcamp-videos-images/images/news-eco-friendly-choices.jpg");
 }
 
 .sec10-cards .card3 .img {
