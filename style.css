@@ -1107,3 +1107,212 @@ footer button {
         height: 600px;
     }
 }
+
+/* =========================================
+   SCROLL ANIMATIONS
+========================================= */
+
+/* Initial state */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* When element enters viewport */
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Slide from left */
+.scroll-left {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Slide from right */
+.scroll-right {
+    opacity: 0;
+    transform: translateX(80px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Scale animation */
+.scroll-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-scale.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Stagger animation for cards */
+.scroll-stagger {
+    opacity: 0;
+    transform: translateY(50px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.scroll-stagger.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .scroll-reveal,
+    .scroll-left,
+    .scroll-right,
+    .scroll-scale,
+    .scroll-stagger {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+/* =========================================
+   CARD SCROLL TRANSITION DELAYS
+========================================= */
+
+
+/* ---------- SECTION 2 ---------- */
+
+.sec2-cards .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.sec2-cards .card:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.sec2-cards .card:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+
+/* ---------- SECTION 4 ---------- */
+
+.sec4-content .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.sec4-content .card:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.sec4-content .card:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.sec4-content .card:nth-child(4) {
+    transition-delay: 0.55s;
+}
+
+
+/* ---------- SECTION 6 ---------- */
+
+.sec6-cards .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.sec6-cards .card:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.sec6-cards .card:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.sec6-cards .card:nth-child(4) {
+    transition-delay: 0.55s;
+}
+
+.sec6-cards .card:nth-child(5) {
+    transition-delay: 0.7s;
+}
+
+.sec6-cards .card:nth-child(6) {
+    transition-delay: 0.85s;
+}
+
+
+/* ---------- SECTION 7 ---------- */
+
+.sec7-main .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.sec7-main .card:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.sec7-main .card:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+
+/* ---------- SECTION 8 ---------- */
+
+.sec8-cards .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.sec8-cards .card:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.sec8-cards .card:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.sec8-cards .card:nth-child(4) {
+    transition-delay: 0.55s;
+}
+
+
+/* ---------- SECTION 10 ---------- */
+
+.sec10-cards .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.sec10-cards .card:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.sec10-cards .card:nth-child(3) {
+    transition-delay: 0.4s;
+}
