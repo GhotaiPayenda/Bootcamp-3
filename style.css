@@ -211,6 +211,17 @@ h1 {
     gap: 30px;
 }
 
+.card {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
 .sec2-cards .card {
     width: 400px;
     height: 450px;
@@ -1164,53 +1175,8 @@ footer button {
 }
 
 
-/* Slide from right */
-.scroll-right {
-    opacity: 0;
-    transform: translateX(80px);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-}
-
-.scroll-right.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
-/* Scale animation */
-.scroll-scale {
-    opacity: 0;
-    transform: scale(0.8);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-}
-
-.scroll-scale.show {
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-/* Stagger animation for cards */
-.scroll-stagger {
-    opacity: 0;
-    transform: translateY(50px);
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
-
-.scroll-stagger.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 /* Accessibility */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
 
     .scroll-reveal,
     .scroll-left,
@@ -1221,7 +1187,7 @@ footer button {
         transform: none;
         transition: none;
     }
-}
+} */
 
 
 /* =========================================
