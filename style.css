@@ -162,10 +162,31 @@ h1 {
 
 .hero-footer {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     margin-bottom: 60px;
     margin-top: 40px;
-    overflow: hidden;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+.hero-footer::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    gap: 2rem;
+    animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
 }
 
 .sec2 {
