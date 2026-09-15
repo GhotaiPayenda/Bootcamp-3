@@ -1159,6 +1159,20 @@ footer button {
     transform: translateY(0);
 }
 
+.scroll-stagger {
+    opacity: 0;
+    transform: translateY(50px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.scroll-stagger.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Slide from left */
 .scroll-left {

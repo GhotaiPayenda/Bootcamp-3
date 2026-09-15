@@ -19,6 +19,9 @@ const observer = new IntersectionObserver((entries) => {
 
         });
     },
+    {
+    threshold: 0.15
+}
 );
 
 elements.forEach((element) => {
